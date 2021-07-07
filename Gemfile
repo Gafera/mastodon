@@ -29,7 +29,7 @@ gem 'streamio-ffmpeg', '~> 3.0'
 gem 'blurhash', '~> 0.1'
 
 gem 'active_model_serializers', '~> 0.10'
-gem 'addressable', '~> 2.7'
+gem 'addressable', '~> 2.8', '>= 2.8.0'
 gem 'bootsnap', '~> 1.4', require: false
 gem 'browser'
 gem 'charlock_holmes', '~> 0.7.7'
@@ -44,7 +44,7 @@ group :pam_authentication, optional: true do
 end
 
 gem 'net-ldap', '~> 0.16'
-gem 'omniauth-cas', '~> 1.1'
+gem 'omniauth-cas', '~> 1.1', '>= 1.1.1'
 gem 'omniauth-saml', '~> 1.10'
 gem 'omniauth', '~> 1.9'
 
@@ -52,12 +52,12 @@ gem 'discard', '~> 1.2'
 gem 'doorkeeper', '~> 5.4'
 gem 'fast_blank', '~> 1.0'
 gem 'fastimage'
-gem 'goldfinger', '~> 2.1'
+gem 'goldfinger', '~> 2.1', '>= 2.1.1'
 gem 'hiredis', '~> 0.6'
 gem 'redis-namespace', '~> 1.7'
 gem 'health_check', git: 'https://github.com/ianheggie/health_check', ref: '0b799ead604f900ed50685e9b2d469cd2befba5b'
 gem 'htmlentities', '~> 4.3'
-gem 'http', '~> 4.4'
+gem 'http', '~> 4.4', '>= 4.4.1'
 gem 'http_accept_language', '~> 2.1'
 gem 'http_parser.rb', '~> 0.6', git: 'https://github.com/tmm1/http_parser.rb', ref: '54b17ba8c7d8d20a16dfc65d1775241833219cf2', submodules: true
 gem 'httplog', '~> 1.4.2'
@@ -74,7 +74,7 @@ gem 'parslet'
 gem 'parallel', '~> 1.19'
 gem 'posix-spawn', git: 'https://github.com/rtomayko/posix-spawn', ref: '58465d2e213991f8afb13b984854a49fcdcc980c'
 gem 'pundit', '~> 2.1'
-gem 'premailer-rails'
+gem 'premailer-rails', '>= 1.11.1'
 gem 'rack-attack', '~> 6.3'
 gem 'rack-cors', '~> 1.1', require: 'rack/cors'
 gem 'rails-i18n', '~> 5.1'
@@ -118,14 +118,14 @@ group :production, :test do
 end
 
 group :test do
-  gem 'capybara', '~> 3.32'
+  gem 'capybara', '~> 3.32', '>= 3.32.2'
   gem 'climate_control', '~> 0.2'
   gem 'faker', '~> 2.11'
   gem 'microformats', '~> 4.2'
   gem 'rails-controller-testing', '~> 1.0'
   gem 'rspec-sidekiq', '~> 3.0'
   gem 'simplecov', '~> 0.18', require: false
-  gem 'webmock', '~> 3.8'
+  gem 'webmock', '~> 3.8', '>= 3.8.3'
   gem 'parallel_tests', '~> 2.32'
   gem 'rspec_junit_formatter', '~> 0.4'
 end
@@ -136,8 +136,8 @@ group :development do
   gem 'better_errors', '~> 2.7'
   gem 'binding_of_caller', '~> 0.7'
   gem 'bullet', '~> 6.1'
-  gem 'letter_opener', '~> 1.7'
-  gem 'letter_opener_web', '~> 1.4'
+  gem 'letter_opener', '~> 1.7', '>= 1.7.0'
+  gem 'letter_opener_web', '~> 1.4', '>= 1.4.0'
   gem 'memory_profiler'
   gem 'rubocop', '~> 0.84', require: false
   gem 'rubocop-rails', '~> 2.5', require: false
