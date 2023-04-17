@@ -100,8 +100,8 @@ gem 'tzinfo-data', '~> 1.2020'
 gem 'webpacker', '~> 5.1'
 gem 'webpush'
 
-gem 'json-ld'
-gem 'json-ld-preloaded', '~> 3.1'
+gem 'json-ld', '>= 3.2.4'
+gem 'json-ld-preloaded', '~> 3.1', '>= 3.1.2'
 gem 'rdf-normalize', '~> 0.4'
 
 group :development, :test do
